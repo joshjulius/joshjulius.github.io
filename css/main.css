@@ -1,0 +1,775 @@
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ::-webkit-scrollbar {
+        display:none;
+    }
+
+    ::selection {
+        background: rgba(255, 127, 42, 0.5);
+    }
+
+
+
+    
+/*----------------------- PRELOADER -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 100vw;
+    background: #0e1217;
+    position: fixed;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    align-self: center;
+    justify-self: center;
+}
+
+.preloader-gif {
+    width: 30vw;
+}
+
+
+
+
+
+/*----------------------------- GENERAL ---------------------------------*/
+
+    body {
+        background-color: #00171f;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'Lato', 'Helvetica', sans-serif;
+        font-weight: 600;
+        line-height: 1.65;
+        word-spacing: 0.12em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        transition:all 0.3s ease-in-out;
+    }
+
+
+
+
+
+
+
+/*----------------------- CONTAINER MORAINE -----------------------*/
+    .container-moraine {
+        display: grid;
+        grid-template-rows: 110vh;
+        grid-template-columns: 100vw;
+        background-image: url("../images/tealorange/moraine.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 100%;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .item-welcome {
+        align-self: center;
+        justify-self: center;
+    }
+
+    img.landing-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    img.landing-image-sub {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+
+
+
+
+
+
+
+    /*----------------------- CONTAINER DIVIDER -----------------------*/
+    .container-divider{
+        display: grid;
+        grid-template-columns: 100vw;
+        position: relative;
+        margin-top: -15vw;
+        z-index: 2;
+    }
+
+    .item-divider{
+        align-self: center;
+        justify-self: center;
+}
+
+    .dog-divider {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 8px;
+    }
+
+
+
+
+
+
+
+
+
+    /*----------------------- CONTAINER ABOUT ME -----------------------*/
+    .container-black {
+        display: grid;
+        grid-template-rows: 115vw 85vw;
+        grid-template-columns: 100vw;  
+        background-image: linear-gradient(#00171f, #004157);    
+        z-index: 1;
+        grid-template-areas: 
+            "about"
+            "photo";
+    }
+
+    .item-black-photo {
+        align-self: center;
+        justify-self: center;
+        grid-area: photo;
+        padding-bottom: 10%;
+    }
+
+    .item-black-about {
+        align-self: center;
+        justify-self: center;
+        padding: 10% 10% 0% 10%;
+        grid-area: about;
+    }
+
+    .about-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        max-width: 100%;
+    }
+
+    p.head1 {
+        color: white;
+        font-size: 4.5vw;
+    }
+
+    .head2 {
+        font-size: 3.5vw;
+    }
+
+
+
+
+
+
+/*--------------------- CONTAINER ICEBERG DIVIDER -----------------*/
+
+.iceberg-wrapper {
+    height: 50vw;
+    position: relative;
+}
+
+.container-iceberg-divider {
+    display: grid;
+    grid-template-columns: 100vw;
+    background-color: #00171f;
+    margin-top: -5vw;
+}
+
+.item-iceberg-divider{
+    align-self: center;
+    justify-self: center;
+}
+
+.iceberg-divider {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container-flash {
+    display: grid;
+    grid-template-columns: 100vw;
+    position: absolute;
+    top: 20.9vw;
+}
+
+.item-flash {
+    align-self: center;
+    justify-self: center;
+}
+
+.flashimg {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+
+
+
+
+/*----------------------- CONTAINTER TRAVELPHOTO -----------------------*/
+
+.container-travelphoto {
+    display: grid;
+    grid-template-rows: 60vw 55vw 45vw 40vw;
+    grid-template-columns: 100vw;
+    background-color: #00171f;
+}
+
+.item-photowords {
+    align-self: center;
+    justify-self: center;
+    padding: 0% 10% 0% 10%;
+    margin-top: 10%;
+}
+
+.item-bullet {
+    align-self: center;
+    justify-self: start;
+    padding: 0% 10% 0% 10%;
+}
+
+.item-simpleArt {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    width: 100vw;
+    height: 50vw;
+}
+
+.imgnature, .imgoutdoor {
+    position: absolute;
+}
+
+.imgSimpleArt {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: 7.5%;
+}
+
+.item-description {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    width: 100vw;
+    height: 40vw;
+}
+
+.descnature, .descoutdoor, .descdark, .descphoto, .descaviation {
+    position: absolute;
+    left: 6%;
+}
+
+.headbullet {
+    color: rgba(0, 225, 255, 0.25);
+    font-size: 6.5vw;
+    line-height: 1.4;
+    list-style: none;
+}
+
+li.listbullet {
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+}
+
+li.listbullet:hover {
+    color: rgba(0, 225, 255);
+}
+
+li.listactive {
+    color: rgba(0, 225, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- PHOTOS ------------------*/
+
+.container-photo {
+    display: grid;
+    grid-template-columns: 100vw;
+    background-color: #00171f;
+}
+
+.photos {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------- FOOTER -----------------------*/
+
+.container-footer {
+    display: grid;
+    grid-template-rows: 5vh 5vh 15vh;
+    grid-template-columns: 100vw;
+    background-color: #00171f;  
+}
+
+.item-footer-email {
+    align-self: center;
+    justify-self: center;
+    font-size: 3vh;
+}
+
+.item-footer-copyright {
+    align-self: center;
+    justify-self: center;
+    font-size: 3vh;
+}
+
+.item-footer-fire {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+/* .item-links {
+    align-self: center;
+    justify-self: center;
+} */
+
+/* .instagram {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    max-width: 100%;
+}
+
+.vimeo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    max-width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(41, 65, 80); /* Set a background color */
+    color: rgb(73, 212, 205); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*-------------------- LANDING PAGE MEDIA QUERIES ------------------------ */
+
+
+    @media screen and (min-aspect-ratio: 17/10) {
+        .container-moraine {
+            background-position: 50% 98%;
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 18/10) {
+        .container-moraine {
+            background-position: 50% 96%;
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 19/10) {
+        .container-moraine {
+            background-position: 50% 94%;
+        }
+    }
+    
+    @media screen and (min-aspect-ratio: 21/10) {
+        .container-moraine {
+            background-position: 50% 92%;
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 23/10) {
+        .container-moraine {
+            background-position: 50% 90%;
+        }
+    }
+    
+  
+
+
+
+
+
+
+
+
+
+/*------------------------- ABOUT ME MEDIA QUERIES ------------------------ */
+
+
+@media (max-width:740px) and (max-height:450px), (min-width:741px){
+        
+    .container-black {
+        display: grid;
+        grid-template-rows: 55vw;
+        grid-template-columns: 45vw 55vw;
+        grid-template-areas: 
+            "photo about";
+    }
+        
+    .item-black-photo {
+        align-self: center;
+        justify-self: center;
+        grid-area: photo;
+        padding: 0%;
+    }
+
+    .item-black-about {
+        align-self: center;
+        justify-self: center;
+        padding: 10%;
+        grid-area: about;
+    }
+
+    p.head1 {
+        font-size: 2vw;
+        color: white;
+    }
+
+    .head2 {
+        font-size: 1.6vw;
+    }
+
+
+
+
+
+
+    .container-travelphoto {
+        display: grid;
+        grid-template-rows: 20vw 15vw 25vw;
+        grid-template-columns: 45vw 55vw;
+        grid-template-areas: 
+            "photowords photowords"
+            "bullet simpleArt"
+            "bullet description";
+        background-color: #00171f;
+    }
+    
+    .item-photowords {
+        padding: 5% 10% 0% 10%;
+        grid-area: photowords;
+    }
+    
+    .item-bullet {
+        justify-self: center;
+        padding: 0% 10% 10% 10%;
+        grid-area: bullet;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .item-simpleArt {
+        width: 55vw;
+        height: 15vw;
+        grid-area: simpleArt;
+    }
+
+    .imgSimpleArt {
+        width: 60%;
+        margin-top: 2%;
+    }
+
+    .item-description {
+        grid-area: description;
+        width: 55vw;
+        height: 25vw;
+    }
+
+    .descnature, .descoutdoor, .descdark, .descphoto, .descaviation {
+        top: 20%;
+    }
+    
+    .headbullet {
+        color: rgba(0, 225, 255, 0.25);
+        font-size: 4vw;
+        line-height: 1.4;
+        list-style: none;
+    }
+    
+    li.listbullet {
+        cursor: pointer;
+        transition:all 0.5s ease-in-out;
+    }
+    
+    li.listbullet:hover {
+        color: rgba(0, 225, 255);
+    }
+    
+    li.listactive {
+        color: rgba(0, 225, 255);
+    }
+    
+    
+
+
+
+
+
+
+    .container-photo {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 33vw 33vw 33vw;
+        background-color: #00171f;
+        grid-auto-flow: row;
+        justify-content: space-evenly;	
+    }
+    
+    .photos {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------- FOOTER MEDIA QUERIES -------------------------*/
+
+@media screen and (min-aspect-ratio: 1/1) {
+   
+    .container-footer {
+        display: grid;
+        grid-template-rows: 25vh;
+        grid-template-columns: 40vw 20vw 40vw;
+        grid-template-areas: 
+            "email fire copyright"
+    }
+
+    .item-footer-email {
+        grid-area: email;
+        font-size: 2vw;
+    }
+
+    .item-footer-fire {
+        grid-area: fire;
+    }
+
+    .item-footer-copyright {
+        grid-area: copyright;
+        font-size: 2vw;
+    }
+        
+    .footer-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------- ASPECT RATIO MEDIA QUERIES ----------------------------------*/
+
+@media screen and (min-aspect-ratio: 5/2) {
+    * {
+        display: none;
+    }
+}
+
+@media screen and (max-aspect-ratio: 2/5) {
+    * {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 250px) {
+    * {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    * {
+        display: none;
+    }
+
+}
+
+
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+    /*
+
+    .container-louise {
+        display: grid;
+        grid-template-rows: 100vh;
+        background-image: url('../images/canoenice.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 85%;
+    }
+
+    .container-dog {
+        display: grid;
+        grid-template-rows: 200px;
+        background-image: url("../images/canoedogcolor.png");
+        background-repeat: no-repeat;
+        background-size: 25vw;
+        background-position: bottom left;
+        margin-top: -200px;
+        position: relative;
+    }
+
+    
+    .container-wave {
+        display: grid;
+        grid-template-rows: 100vh;
+        background-image: url('../images/wavefitsketchtrans.png');
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        margin-top: -10%;
+        position: relative;
+    }
+    
+*/
+
+/* ----------------------- CAROUSEL -----------------------
+
+.image{
+    width: 100%;
+} */
