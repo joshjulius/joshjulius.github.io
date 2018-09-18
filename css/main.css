@@ -342,7 +342,7 @@ li.listactive {
 
 .container-footer {
     display: grid;
-    grid-template-rows: 5vh 5vh 15vh;
+    grid-template-rows: 12vw 5vw 22vw;
     grid-template-columns: 100vw;
     background-color: #00171f;  
 }
@@ -640,7 +640,7 @@ li.listactive {
 
     .container-footer {
         display: grid;
-        grid-template-rows: 25vh;
+        grid-template-rows: 20vw;
         grid-template-columns: 40vw 20vw 40vw;
         grid-template-areas: 
             "email fire copyright"
