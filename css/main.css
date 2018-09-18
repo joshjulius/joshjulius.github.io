@@ -35,7 +35,7 @@ body.preloader-site {
 }
 
 .preloader-gif {
-    width: 30vw;
+    width: 100vw;
 }
 
 
@@ -350,13 +350,13 @@ li.listactive {
 .item-footer-email {
     align-self: center;
     justify-self: center;
-    font-size: 3vh;
+    font-size: 5vw;
 }
 
 .item-footer-copyright {
     align-self: center;
     justify-self: center;
-    font-size: 3vh;
+    font-size: 5vw;
 }
 
 .item-footer-fire {
@@ -509,6 +509,14 @@ li.listactive {
 
 @media (max-width:740px) and (max-height:450px), (min-width:741px){
         
+
+    .preloader-gif {
+        width: 30vw;
+    }
+
+
+
+
     .container-black {
         display: grid;
         grid-template-rows: 55vw;
