@@ -527,7 +527,7 @@ li.listactive {
     .item-black-about {
         align-self: center;
         justify-self: center;
-        padding: 10%;
+        padding: 0% 10% 0% 10%;
         grid-area: about;
     }
 
