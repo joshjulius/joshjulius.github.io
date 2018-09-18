@@ -633,24 +633,11 @@ li.listactive {
 
 
 
-}
 
 
 
 
 
-
-
-
-
-
-
-
-
-/*------------------- FOOTER MEDIA QUERIES -------------------------*/
-
-@media screen and (min-aspect-ratio: 1/1) {
-   
     .container-footer {
         display: grid;
         grid-template-rows: 25vh;
@@ -681,6 +668,17 @@ li.listactive {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
