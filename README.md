@@ -1,4 +1,3 @@
-- personal website for joshua julius <br>
-- currently works best in chrome <br>
-- idk what im doing <br>
-- https://joshjulius.github.io/
+- this is an outdated personal website that I made for fun a few years ago when I have literally no idea of what I am doing.
+- JS and jquery mostly copy pasted from stackoverflow.
+- lots of cringe material and also bad coding practices lol, like using aspect ratio instead of min-width for media queries.
